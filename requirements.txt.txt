@@ -1,0 +1,15 @@
+# mass_image_generator/requirements.txt
+aiohttp==3.9.1
+requests==2.31.0
+pillow==10.1.0
+python-dotenv==1.0.0
+tqdm==4.66.1
+schedule==1.2.0
+colorama==0.4.6
+httpx==0.25.1
+asyncio
+concurrent-futures
+json5==0.9.14
+pyyaml==6.0.1
+beautifulsoup4==4.12.2
+lxml==4.9.3

@@ -1,0 +1,55 @@
+{
+  "mass_image_generator/config.json"
+  "settings": {
+    "target_images": 1000,
+    "images_per_batch": 50,
+    "max_threads": 4,
+    "save_interval": 100,
+    "image_width": 512,
+    "image_height": 512,
+    "quality": 85,
+    "output_format": "png"
+  },
+  
+  "apis": {
+    "huggingface": {
+      "enabled": true,
+      "daily_limit": 100,
+      "wait_time": 2,
+      "models": [
+        "stabilityai/stable-diffusion-2",
+        "runwayml/stable-diffusion-v1-5",
+        "CompVis/stable-diffusion-v1-4"
+      ]
+    },
+    
+    "replicate": {
+      "enabled": true,
+      "free_credits": 5,
+      "cost_per_image": 0.01
+    },
+    
+    "stability": {
+      "enabled": true,
+      "free_images": 25,
+      "api_version": "v1"
+    }
+  },
+  
+  "prompt_settings": {
+    "languages": ["en", "bn", "hi"],
+    "min_words": 5,
+    "max_words": 20,
+    "include_styles": true,
+    "include_colors": true,
+    "include_adjectives": true
+  },
+  
+  "output_settings": {
+    "base_dir": "outputs",
+    "organize_by_date": true,
+    "create_thumbnails": true,
+    "compress_images": true,
+    "keep_metadata": true
+  }
+}
